@@ -3,6 +3,7 @@ package com.devsuperior.bds04.dto;
 import java.io.Serializable;
 import java.time.LocalDate;
 
+import com.devsuperior.bds04.entities.City;
 import com.devsuperior.bds04.entities.Event;
 
 public class EventDTO implements Serializable {
@@ -65,11 +66,12 @@ public class EventDTO implements Serializable {
 		this.url = url;
 	}
 
-	public Long getCityId() {
-		return cityId;
-	}
 
 	public void setCityId(Long cityId) {
 		this.cityId = cityId;
+	}
+
+	public Long getCityId() {
+		return cityId;
 	}
 }
