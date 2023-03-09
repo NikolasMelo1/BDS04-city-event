@@ -3,13 +3,16 @@ package com.devsuperior.bds04.dto;
 import java.io.Serializable;
 import java.time.LocalDate;
 
-import com.devsuperior.bds04.entities.City;
 import com.devsuperior.bds04.entities.Event;
+
+import javax.validation.constraints.NotBlank;
 
 public class EventDTO implements Serializable {
 	private static final long serialVersionUID = 1L;
 	
 	private Long id;
+
+	@NotBlank(message = "Campo obrigátorio")
 	private String name;
 	private LocalDate date;
 	private String url;
